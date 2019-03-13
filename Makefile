@@ -3,6 +3,24 @@ FWDIR=MP_mt6753_n325bh_s5580n_zwx_cc_128gbitp24d3_m_lte_3m-fdd-cs_mul_20170105-1
 
 RAWIMG=system.raw.img
 
+ASISFILES = \
+	boot.img \
+	lk.bin \
+	MT6753_Android_scatter.txt \
+	recovery.img \
+	userdata.img \
+	cache.img \
+	logo.bin \
+	preloader_n325bh.bin \
+	secro.img \
+	trustzone.bin
+
+proto: newsystem
+	rm -rf proto
+	mkdir proto
+	cd $(FWDIR) ; ln $(ASISFILES) ../proto
+	cp $(RAWIMG) proto/system.img
+
 newsystem: mount malware garbage umount
 
 garbage:
