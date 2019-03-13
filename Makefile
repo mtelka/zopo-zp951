@@ -19,17 +19,22 @@ proto: newsystem
 	rm -rf proto
 	mkdir proto
 	cd $(FWDIR) ; ln $(ASISFILES) ../proto
-	cp $(RAWIMG) proto/system.img
+	ln -s ../$(RAWIMG) proto/system.img
 
 newsystem: mount malware garbage umount
 
 garbage:
+	sudo rm -rf mnt/app/Hangouts
+	sudo rm -rf mnt/app/Books
+	sudo rm -rf mnt/app/PlayGames
+	sudo rm -rf mnt/app/Newsstand
 
 malware:
 	sudo rm -rf mnt/priv-app/com.google.android.youtube
 
 umount: mount
 	sudo umount mnt
+	-rmdir mnt
 	rm -f $<
 
 mount: mnt
