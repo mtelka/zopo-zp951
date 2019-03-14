@@ -27,7 +27,9 @@ garbage:
 	sudo rm -rf mnt/app/Hangouts	# Google Hangouts
 	sudo rm -rf mnt/app/Books	# Google Play Books
 	sudo rm -rf mnt/app/PlayGames	# Google Play Games
+	sudo rm -rf mnt/app/Music2	# Google Play Music
 	sudo rm -rf mnt/app/GoogleVideos	# Google Play Movies & TV
+	sudo rm -rf mnt/app/PlusOne	# Google+
 	sudo rm -rf mnt/app/Newsstand	# Google Play Newsstand (discontinued, replaced by Google News)
 	sudo rm -rf mnt/app/Drive	# Google Drive
 	sudo rm -rf mnt/app/HotKnot			# Hot Knot
