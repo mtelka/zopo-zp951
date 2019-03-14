@@ -24,13 +24,14 @@ proto: newsystem
 newsystem: mount malware garbage umount
 
 garbage:
-	sudo rm -rf mnt/app/Hangouts
-	sudo rm -rf mnt/app/Books
-	sudo rm -rf mnt/app/PlayGames
-	sudo rm -rf mnt/app/Newsstand
+	sudo rm -rf mnt/app/Hangouts	# Google Hangouts
+	sudo rm -rf mnt/app/Books	# Google Play Books
+	sudo rm -rf mnt/app/PlayGames	# Googpe Play Games
+	sudo rm -rf mnt/app/Newsstand	# Google Play Newsstand (discontinued, replaced by Google News)
 
 malware:
-	sudo rm -rf mnt/priv-app/com.google.android.youtube
+	sudo rm -rf mnt/priv-app/com.google.android.youtube	# infected
+	sudo rm -rf mnt/app/com.sherlock.news	# possibly infected, unknown purpose
 
 umount:
 	-sudo umount mnt
