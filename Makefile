@@ -28,6 +28,10 @@ garbage:
 	sudo rm -rf mnt/app/Books	# Google Play Books
 	sudo rm -rf mnt/app/PlayGames	# Googpe Play Games
 	sudo rm -rf mnt/app/Newsstand	# Google Play Newsstand (discontinued, replaced by Google News)
+	sudo rm -rf mnt/app/HotKnot			# Hot Knot
+	sudo rm -rf mnt/priv-app/HotKnotBeam		# Hot Knot
+	sudo rm -rf mnt/priv-app/HotKnotCommonUI	# Hot Knot
+	sudo rm -rf mnt/priv-app/HotKnotConnectivity	# Hot Knot
 
 malware:
 	sudo rm -rf mnt/priv-app/com.google.android.youtube	# infected
