@@ -56,6 +56,7 @@ garbage:
 	sudo rm -rf mnt/app/LiveWallpapers		# Wallpapers
 	sudo rm -rf mnt/app/LiveWallpapersPicker	# Wallpapers
 	sudo rm -rf mnt/app/Exchange2	# Exchange Services
+	sudo rm -rf mnt/app/SchedulePowerOnOff	# Scheduled power on & off
 
 malware:
 	sudo rm -rf mnt/priv-app/com.google.android.youtube	# infected
