@@ -32,10 +32,10 @@ garbage:
 malware:
 	sudo rm -rf mnt/priv-app/com.google.android.youtube
 
-umount: mount
-	sudo umount mnt
+umount:
+	-sudo umount mnt
 	-rmdir mnt
-	rm -f $<
+	rm -f mount
 
 mount: mnt
 	test -f $(RAWIMG) || $(MAKE) $(RAWIMG)
@@ -54,11 +54,11 @@ unpack: $(ZOPOZIP)
 	unzip $(ZOPOZIP)
 	touch $@
 
-clean:
-	-sudo umount mnt
+clean: umount
+	! test -d mnt
 	rm -f unpack
 	rm -rf database
 	rm -rf $(FWDIR)
 	rm -rf MultiDownloadTool_V1648.zip
 	rm -f system.raw.img
-	-rmdir mnt
+	rm -rf proto
