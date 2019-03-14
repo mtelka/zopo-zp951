@@ -26,12 +26,18 @@ newsystem: mount malware garbage umount
 garbage:
 	sudo rm -rf mnt/app/Hangouts	# Google Hangouts
 	sudo rm -rf mnt/app/Books	# Google Play Books
-	sudo rm -rf mnt/app/PlayGames	# Googpe Play Games
+	sudo rm -rf mnt/app/PlayGames	# Google Play Games
+	sudo rm -rf mnt/app/GoogleVideos	# Google Play Movies & TV
 	sudo rm -rf mnt/app/Newsstand	# Google Play Newsstand (discontinued, replaced by Google News)
+	sudo rm -rf mnt/app/Drive	# Google Drive
 	sudo rm -rf mnt/app/HotKnot			# Hot Knot
 	sudo rm -rf mnt/priv-app/HotKnotBeam		# Hot Knot
 	sudo rm -rf mnt/priv-app/HotKnotCommonUI	# Hot Knot
 	sudo rm -rf mnt/priv-app/HotKnotConnectivity	# Hot Knot
+	sudo rm -rf mnt/app/AdupsFota			# Adups Fota
+	sudo rm -rf mnt/app/AdupsFotaReboot		# Adups Fota
+	sudo rm -rf mnt/priv-app/BackupRestoreConfirmation	# Backup and Restore
+	sudo rm -rf mnt/priv-app/CallLogBackup			# Backup and Restore
 
 malware:
 	sudo rm -rf mnt/priv-app/com.google.android.youtube	# infected
