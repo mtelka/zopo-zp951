@@ -33,6 +33,10 @@ garbage:
 	sudo rm -rf mnt/app/Newsstand	# Google Play Newsstand (discontinued, replaced by Google News)
 	sudo rm -rf mnt/app/NewsWeather	# Google News & Weather (discontinued, replaced by Google News)
 	sudo rm -rf mnt/app/Drive	# Google Drive
+	sudo rm -rf mnt/app/Keep	# Google Keep
+	sudo rm -rf mnt/app/Maps	# Google Maps
+	sudo rm -rf mnt/app/GoogleCalendarSyncAdapter	# Google Calendar Sync
+	sudo rm -rf mnt/app/GoogleContactsSyncAdapter	# Google Contacts Sync
 	sudo rm -rf mnt/app/HotKnot			# Hot Knot
 	sudo rm -rf mnt/priv-app/HotKnotBeam		# Hot Knot
 	sudo rm -rf mnt/priv-app/HotKnotCommonUI	# Hot Knot
@@ -45,6 +49,7 @@ garbage:
 	sudo rm -rf mnt/priv-app/SharedStorageBackup		# Backup and Restore
 	sudo rm -rf mnt/vendor/operator/app/com.example.web	# zopo website
 	sudo rm -rf mnt/vendor/operator/app/com.thihaayekyaw.frozenkeyboard	# Frozen Keyboard
+	sudo rm -rf mnt/app/LocationEM2	# LocationEM2
 
 malware:
 	sudo rm -rf mnt/priv-app/com.google.android.youtube	# infected
