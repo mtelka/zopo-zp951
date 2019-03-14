@@ -35,6 +35,7 @@ garbage:
 	sudo rm -rf mnt/app/Drive	# Google Drive
 	sudo rm -rf mnt/app/Keep	# Google Keep
 	sudo rm -rf mnt/app/Maps	# Google Maps
+	sudo rm -rf mnt/priv-app/GooglePartnerSetup	# Google Partner Setup
 	sudo rm -rf mnt/app/GoogleCalendarSyncAdapter	# Google Calendar Sync
 	sudo rm -rf mnt/app/GoogleContactsSyncAdapter	# Google Contacts Sync
 	sudo rm -rf mnt/app/HotKnot			# Hot Knot
@@ -50,6 +51,11 @@ garbage:
 	sudo rm -rf mnt/vendor/operator/app/com.example.web	# zopo website
 	sudo rm -rf mnt/vendor/operator/app/com.thihaayekyaw.frozenkeyboard	# Frozen Keyboard
 	sudo rm -rf mnt/app/LocationEM2	# LocationEM2
+	sudo rm -rf mnt/app/HoloSpiralWallpaper		# Wallpapers
+	sudo rm -rf mnt/app/PhaseBeam			# Wallpapers
+	sudo rm -rf mnt/app/LiveWallpapers		# Wallpapers
+	sudo rm -rf mnt/app/LiveWallpapersPicker	# Wallpapers
+	sudo rm -rf mnt/app/Exchange2	# Exchange Services
 
 malware:
 	sudo rm -rf mnt/priv-app/com.google.android.youtube	# infected
