@@ -57,6 +57,8 @@ garbage:
 	sudo rm -rf mnt/app/LiveWallpapersPicker	# Wallpapers
 	sudo rm -rf mnt/app/Exchange2	# Exchange Services
 	sudo rm -rf mnt/app/SchedulePowerOnOff	# Scheduled power on & off
+	sudo rm -rf mnt/app/Email	# Email (not easily upgradable)
+	sudo rm -rf mnt/app/BSPTelephonyDevTool	# BSPTelephonyDevTool 1.0
 
 malware:
 	sudo rm -rf mnt/priv-app/com.google.android.youtube	# infected
