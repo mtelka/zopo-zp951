@@ -94,3 +94,6 @@ clean: umount
 	rm -rf MultiDownloadTool_V1648.zip
 	rm -f system.raw.img
 	rm -rf proto
+
+clobber: clean
+	rm -f $(ZOPOZIP)
